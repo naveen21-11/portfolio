@@ -1,147 +1,1000 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Montserrat", sans-serif;
-}
-.w3-row-padding img {
-  margin-bottom: 12px;
-}
-#main {
-  margin-left: 0;
-  padding-top: 60px;
-}
-.w3-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-</style>
-<body class="w3-black">
-<!--section-->
-<!-- Top landscape navbar -->
-<!-- Top landscape navbar with centered items -->
-<div class="w3-bar w3-black w3-large" style="display: flex; justify-content: center;">
-  <a href="#" class="w3-bar-item w3-button">HOME</a>
-  <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#photos" class="w3-bar-item w3-button">PHOTOS</a>
-  <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
-</div>
+<html lang="en" data-theme="dark">
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Naveen V - Software Engineer & Full-Stack Python Developer. Specializing in Django, Python, MySQL, and responsive web platforms.">
+    <meta name="keywords"
+        content="Naveen V, Python Developer, Django Engineer, Full Stack Developer, Software Engineer Portfolio, Coimbatore, Web Architect">
+    <meta name="author" content="Naveen V">
+    <title>Naveen V | Full-Stack Python Engineer & Web Developer</title>
 
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-    <p>Photographer and Web Designer.</p>
-    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me... [keep original content here]</p>
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:95%"></div></div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:85%"></div></div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
+    <!-- Custom Design System Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
 
-    <!-- Stats -->
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section"><span class="w3-xlarge">11+</span><br>Partners</div>
-      <div class="w3-quarter w3-section"><span class="w3-xlarge">55+</span><br>Projects Done</div>
-      <div class="w3-quarter w3-section"><span class="w3-xlarge">89+</span><br>Happy Clients</div>
-      <div class="w3-quarter w3-section"><span class="w3-xlarge">150+</span><br>Meetings</div>
+<body>
+    <!-- Dynamic Glowing Mesh Background -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Sticky Glassmorphic Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-code">&lt;</span>Naveen<span class="logo-accent">.V</span><span
+                    class="logo-code">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i>
+                            Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user-shield"></i>
+                            About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                    </li>
+                    <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i>
+                            Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i>
+                            Experience</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link"><i
+                                class="fa-solid fa-certificate"></i> Credentials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i>
+                            Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <button id="resume-btn" class="btn btn-outline nav-resume-btn open-resume-modal">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume PDF
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-status">
+                    <span class="status-dot"></span>
+                    <span>Open for Full-Stack Developer Roles & Engineering Opportunities</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Naveen V</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Building web applications with <span class="typing-text" id="typing-text"></span><span
+                        class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    Aspiring B.Sc. Information Technology student and Full-Stack Developer with hands-on experience
+                    architecting, building, and deploying live <strong>Django</strong> web applications. Skilled in
+                    Python, JavaScript, and MySQL with a commitment to clean code and high performance.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Live Projects</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <button class="btn btn-glass open-resume-modal">
+                        <i class="fa-solid fa-file-pdf"></i> View Resume
+                    </button>
+                </div>
+
+                <div class="hero-contact-strip">
+                    <a href="mailto:Visukr57@gmail.com" class="contact-pill">
+                        <i class="fa-solid fa-envelope"></i> Visukr57@gmail.com
+                    </a>
+                    <a href="tel:+919655271699" class="contact-pill">
+                        <i class="fa-solid fa-phone"></i> +91 9655271699
+                    </a>
+                    <a href="https://github.com/naveen21-11" target="_blank" rel="noopener noreferrer"
+                        class="contact-pill">
+                        <i class="fa-brands fa-github"></i> GitHub: naveen21-11
+                    </a>
+                    <a href="https://linkedin.com/in/naveen21" target="_blank" rel="noopener noreferrer"
+                        class="contact-pill">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn: naveen21
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Multi-Tab Developer Terminal -->
+            <div class="hero-visual">
+                <div class="profile-card-wrapper">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="terminal-tabs">
+                                <button class="term-tab active" data-tab="tab-python">
+                                    <i class="fa-brands fa-python py-color"></i> profile.py
+                                </button>
+                                <button class="term-tab" data-tab="tab-django">
+                                    <i class="fa-solid fa-server dj-color"></i> django_apps.py
+                                </button>
+                                <button class="term-tab" data-tab="tab-sql">
+                                    <i class="fa-solid fa-database db-color"></i> schema.sql
+                                </button>
+                            </div>
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                        </div>
+
+                        <div class="code-preview">
+                            <!-- Tab 1: Python -->
+                            <div class="term-code-content active" id="tab-python">
+                                <pre><code><span class="code-keyword">class</span> <span class="code-class">FullStackEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Naveen V"</span>
+        self.role = <span class="code-string">"Python Full-Stack Developer"</span>
+        self.degree = <span class="code-string">"B.Sc. Information Technology"</span>
+        self.core_stack = [<span class="code-string">"Python"</span>, <span class="code-string">"Django"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"MySQL"</span>]
+        self.live_projects = <span class="code-number">2</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">get_objective</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Architecting scalable, responsive web solutions."</span></code></pre>
+                            </div>
+
+                            <!-- Tab 2: Django -->
+                            <div class="term-code-content" id="tab-django">
+                                <pre><code><span class="code-keyword">from</span> django.db <span class="code-keyword">import</span> models
+
+<span class="code-keyword">class</span> <span class="code-class">LiveProductionApp</span>(models.Model):
+    title = models.CharField(max_length=<span class="code-number">200</span>)
+    live_url = models.URLField()
+    tech_stack = models.JSONField(default=list)
+    is_deployed = models.BooleanField(default=<span class="code-keyword">True</span>)
+
+    <span class="code-keyword">def</span> <span class="code-func">deploy</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Deployed with high availability & performance!"</span></code></pre>
+                            </div>
+
+                            <!-- Tab 3: SQL -->
+                            <div class="term-code-content" id="tab-sql">
+                                <pre><code><span class="code-keyword">CREATE TABLE</span> <span class="code-class">charitable_trust_projects</span> (
+    id <span class="code-keyword">INT PRIMARY KEY AUTO_INCREMENT</span>,
+    project_name <span class="code-keyword">VARCHAR</span>(<span class="code-number">255</span>) <span class="code-keyword">NOT NULL</span>,
+    live_domain <span class="code-keyword">VARCHAR</span>(<span class="code-number">255</span>),
+    status <span class="code-keyword">ENUM</span>(<span class="code-string">'LIVE'</span>, <span class="code-string">'MAINTENANCE'</span>) <span class="code-keyword">DEFAULT</span> <span class="code-string">'LIVE'</span>
+);</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">2+</span>
+                                <span class="stat-label">Live Production Sites</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">Full Stack</span>
+                                <span class="stat-label">Python & Django</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">2027</span>
+                                <span class="stat-label">B.Sc. IT (Present)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Engineering Pillars Section -->
+    <section class="section pillars-section">
+        <div class="container">
+            <div class="pillars-grid">
+                <div class="pillar-card glass-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend Architecture</h3>
+                    <p>Designing robust Django applications with clean MVC code structure, secure models, dynamic views,
+                        and optimized database queries.</p>
+                </div>
+
+                <div class="pillar-card glass-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Frontend Engineering</h3>
+                    <p>Crafting accessible, pixel-perfect, mobile-responsive user interfaces using modern HTML5, CSS3,
+                        JavaScript, and Bootstrap framework.</p>
+                </div>
+
+                <div class="pillar-card glass-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Database Systems</h3>
+                    <p>Structuring relational databases in MySQL with normalized tables, relational integrity, efficient
+                        indexing, and query optimization.</p>
+                </div>
+
+                <div class="pillar-card glass-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>Production & Deployment</h3>
+                    <p>Configuring production hosting, managing domains, optimizing page loading speed, accessibility,
+                        and maintaining live applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user-shield"></i> BIOGRAPHY & PHILOSOPHY</span>
+                <h2 class="section-title">About <span class="gradient-text">Naveen V</span></h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Career Objective</h3>
+                    <p>
+                        Aspiring B.Sc. Information Technology student and Full-Stack Developer with hands-on experience
+                        building and deploying live Django web applications. Proficient in Python, JavaScript, and
+                        MySQL, with a strong foundation in responsive frontend design. Seeking a software development
+                        role to contribute to scalable web applications and grow within an innovative tech team.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Key Highlights & Deliverables</h3>
+                    <ul class="about-features">
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Live Web Platforms:</strong> Developed,
+                            deployed, and maintained official websites for <em>Flyers Charitable Trust</em> and
+                            <em>Jeeva Karangal Charitable Trust</em>.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Full-Stack Mastery:</strong> Integrated
+                            Django backend views with responsive Bootstrap/HTML5/CSS3 frontend templates.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Quality & Testing:</strong> Conducted
+                            cross-browser validation, accessibility checks, performance tuning, and database
+                            optimization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional Soft Skills Pills -->
+            <div class="soft-skills-container">
+                <h3 class="soft-skills-title"><i class="fa-solid fa-heart-pulse"></i> Professional Soft Skills & Work
+                    Ethic</h3>
+                <div class="soft-skills-pills">
+                    <div class="pill"><i class="fa-solid fa-brain"></i> Logical Thinking</div>
+                    <div class="pill"><i class="fa-solid fa-clock"></i> Time Management</div>
+                    <div class="pill"><i class="fa-solid fa-users"></i> Teamwork & Collaboration</div>
+                    <div class="pill"><i class="fa-solid fa-rotate"></i> Adaptability & Agility</div>
+                    <div class="pill"><i class="fa-solid fa-comments"></i> Technical Communication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section with Filter Tabs -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-code"></i> TECHNICAL MATRIX</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="skill-filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="backend">Backend & Core</button>
+                <button class="filter-btn" data-filter="frontend">Frontend & Web</button>
+                <button class="filter-btn" data-filter="database">Database & Tools</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Python -->
+                <div class="skill-category glass-card" data-category="backend">
+                    <div class="category-header">
+                        <i class="fa-brands fa-python category-icon py-color"></i>
+                        <div>
+                            <h3>Python</h3>
+                            <span class="skill-badge">Core Language</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Primary language used for web application backend logic, scripting,
+                        data handling, and Django development.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Django -->
+                <div class="skill-category glass-card" data-category="backend">
+                    <div class="category-header">
+                        <i class="fa-solid fa-server category-icon dj-color"></i>
+                        <div>
+                            <h3>Django Framework</h3>
+                            <span class="skill-badge">Full-Stack MVC</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Building backend services, routing, forms, ORM queries, administrative
+                        panels, and live website hosting.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%;"></div>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-category glass-card" data-category="backend">
+                    <div class="category-header">
+                        <i class="fa-brands fa-java category-icon java-color"></i>
+                        <div>
+                            <h3>Java</h3>
+                            <span class="skill-badge">OOP Language</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Object-oriented programming concepts, data structures, and foundational
+                        application logic.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-category glass-card" data-category="frontend">
+                    <div class="category-header">
+                        <i class="fa-brands fa-js category-icon js-color"></i>
+                        <div>
+                            <h3>JavaScript (ES6+)</h3>
+                            <span class="skill-badge">Client Scripting</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Creating dynamic client-side interactivity, DOM manipulation, form
+                        validation, and AJAX operations.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%;"></div>
+                    </div>
+                </div>
+
+                <!-- HTML5 & CSS3 -->
+                <div class="skill-category glass-card" data-category="frontend">
+                    <div class="category-header">
+                        <i class="fa-brands fa-html5 category-icon html-color"></i>
+                        <div>
+                            <h3>HTML5 & CSS3</h3>
+                            <span class="skill-badge">Semantic Layout</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Structuring semantic web pages, modern CSS flexbox/grid layouts,
+                        keyframe animations, and custom styling.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 92%;"></div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="skill-category glass-card" data-category="frontend">
+                    <div class="category-header">
+                        <i class="fa-brands fa-bootstrap category-icon bs-color"></i>
+                        <div>
+                            <h3>Bootstrap Framework</h3>
+                            <span class="skill-badge">Responsive UI</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Accelerating responsive grid layouts, navigation menus, modal dialogs,
+                        and consistent cross-device UI.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-category glass-card" data-category="database">
+                    <div class="category-header">
+                        <i class="fa-solid fa-database category-icon db-color"></i>
+                        <div>
+                            <h3>MySQL Database</h3>
+                            <span class="skill-badge">Relational Database</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Designing relational tables, writing queries, managing foreign keys,
+                        and executing database migrations.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- Development IDEs -->
+                <div class="skill-category glass-card" data-category="database">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code category-icon vscode-color"></i>
+                        <div>
+                            <h3>Developer Tools</h3>
+                            <span class="skill-badge">IDE & Environment</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Proficient with VS Code, MySQL Workbench, Eclipse, IDLE, Command Line
+                        tools, and debugging extensions.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub -->
+                <div class="skill-category glass-card" data-category="database">
+                    <div class="category-header">
+                        <i class="fa-brands fa-github category-icon git-color"></i>
+                        <div>
+                            <h3>Git & GitHub</h3>
+                            <span class="skill-badge">Version Control</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Source code version control, code repositories, branch management, and
+                        collaborative development workflow.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Live Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-layer-group"></i> PRODUCTION DEPLOYMENTS</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Live Projects</span></h2>
+                <div class="title-bar"></div>
+                <p class="section-description">
+                    Official production web platforms built, optimized, deployed, and maintained by Naveen V.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Flyers Charitable Trust -->
+                <div class="project-card glass-card">
+                    <div class="project-banner project-banner-1">
+                        <div class="project-badge"><i class="fa-solid fa-circle-play"></i> Live Website</div>
+                        <div class="project-tech-badges">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <span class="project-role"><i class="fa-solid fa-user-gear"></i> Full-Stack Python
+                            Developer</span>
+                        <h3 class="project-title">Flyers Charitable Trust – Official Web Platform</h3>
+                        <p class="project-desc">
+                            Developed and deployed the official website for Flyers Charitable Trust. Designed a
+                            responsive and user-friendly interface for visitors across desktop and mobile devices.
+                        </p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Created Home, About Us, Programs, Gallery, Contact,
+                                and Donation Info pages.</li>
+                            <li><i class="fa-solid fa-check"></i> Optimized website performance, accessibility, and
+                                cross-browser compatibility.</li>
+                            <li><i class="fa-solid fa-check"></i> Successfully hosted and actively maintaining the live
+                                production server.</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://flyerscharitabletrust.org/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-globe"></i> Visit Live Site
+                            </a>
+                            <a href="https://github.com/nandhakumar-murugan/flyers" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-glass btn-sm open-project-modal" data-project="flyers">
+                                <i class="fa-solid fa-circle-info"></i> Architecture
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Jeeva Karangal Charitable Trust -->
+                <div class="project-card glass-card">
+                    <div class="project-banner project-banner-2">
+                        <div class="project-badge"><i class="fa-solid fa-circle-play"></i> Live Website</div>
+                        <div class="project-tech-badges">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-body">
+                        <span class="project-role"><i class="fa-solid fa-user-gear"></i> Full-Stack Python
+                            Developer</span>
+                        <h3 class="project-title">Jeeva Karangal Charitable Trust – Official Web Platform</h3>
+                        <p class="project-desc">
+                            Designed and developed the official website for Jeeva Karangal Charitable Trust to showcase
+                            the trust's services, events, and social initiatives with clean UI.
+                        </p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Implemented interactive contact forms, photo
+                                galleries, event information, & organization details.</li>
+                            <li><i class="fa-solid fa-check"></i> Deployed on live hosting with reliable server
+                                performance & optimized page load speed.</li>
+                            <li><i class="fa-solid fa-check"></i> Enhanced user experience through intuitive layout and
+                                responsive mobile views.</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://jeevakarangal.org/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-globe"></i> Visit Live Site
+                            </a>
+                            <a href="https://github.com/naveen21-11/jeevakarangal" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-glass btn-sm open-project-modal" data-project="jeeva">
+                                <i class="fa-solid fa-circle-info"></i> Architecture
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-briefcase"></i> CAREER & EDUCATION</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline Item 1: Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-type type-work">INTERNSHIP</span>
+                                <h3 class="timeline-role">Python Full Stack Development Intern</h3>
+                                <h4 class="timeline-company">APPIN TECHNOLOGIES | Coimbatore</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 1 Month Duration</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed dynamic web applications using Python, Django, HTML, CSS, JavaScript, and
+                                MySQL.</li>
+                            <li>Built responsive web pages and enhanced application functionality through testing and
+                                debugging.</li>
+                            <li>Collaborated with mentors to deliver project modules and improve overall code quality.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2: B.Sc IT -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-type type-edu">UNDERGRADUATE</span>
+                                <h3 class="timeline-role">B.Sc. Information Technology</h3>
+                                <h4 class="timeline-company">KG College of Arts and Science | Coimbatore</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 – 2027
+                                (Present)</span>
+                        </div>
+                        <p class="timeline-summary">
+                            Gaining strong theoretical & practical foundation in Computer Science, Database Systems, Web
+                            Application Architecture, Object-Oriented Programming, and Software Engineering principles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3: HSC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-type type-school">HIGHER SECONDARY</span>
+                                <h3 class="timeline-role">Higher Secondary Certificate (HSC)</h3>
+                                <h4 class="timeline-company">Christus Rex Higher Secondary School | The Nilgiris</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 – 2024</span>
+                        </div>
+                        <p class="timeline-summary">Completed Higher Secondary Education with focus on Computer Science
+                            and Mathematics foundation.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4: SSLC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-award"></i></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-type type-school">SECONDARY SCHOOL</span>
+                                <h3 class="timeline-role">Secondary School Certificate (SSLC)</h3>
+                                <h4 class="timeline-company">Christus Rex Higher Secondary School | The Nilgiris</h4>
+                            </div>
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2021 – 2022</span>
+                        </div>
+                        <p class="timeline-summary">Successfully completed Secondary Education foundational studies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Credentials Section -->
+    <section class="section certs-section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-certificate"></i> CREDENTIALS</span>
+                <h2 class="section-title">Certifications & <span class="gradient-text">Training</span></h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="certs-grid">
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="cert-info">
+                        <h3>Python Full Stack Development Certification</h3>
+                        <p class="cert-issuer">Appin Technologies | Coimbatore</p>
+                        <p class="cert-desc">Hands-on practical training covering Python programming, Django web
+                            framework, MySQL database design, REST APIs, and responsive frontend integration.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="cert-info">
+                        <h3>Live Web Application Deployment & Maintenance</h3>
+                        <p class="cert-issuer">Flyers & Jeeva Karangal Live Projects</p>
+                        <p class="cert-desc">Proven real-world experience hosting, configuring domain servers,
+                            optimizing cross-browser layout performance, and maintaining live web platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> LET'S CONNECT</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="title-bar"></div>
+                <p class="section-description">
+                    Have a software project in mind or interested in hiring a Full-Stack Python Engineer? Drop a line
+                    below!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-details">
+                            <span>Direct Email</span>
+                            <a href="mailto:Visukr57@gmail.com">Visukr57@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-details">
+                            <span>Phone / WhatsApp</span>
+                            <a href="tel:+919655271699">+91 9655271699</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-details">
+                            <span>Location</span>
+                            <p>Coimbatore & The Nilgiris, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                        <div class="info-details">
+                            <span>Developer Profiles</span>
+                            <div class="social-links-row">
+                                <a href="https://github.com/naveen21-11" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/in/naveen21" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:Visukr57@gmail.com" aria-label="Email"><i
+                                        class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Alex Morgan" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="alex@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Inquiry Type</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-tag"></i>
+                                <select id="subject" name="subject" class="custom-select" required>
+                                    <option value="Full-Stack Developer Role">Full-Stack Developer Job Role</option>
+                                    <option value="Freelance Web Project">Freelance Web Development</option>
+                                    <option value="Technical Collaboration">Technical Collaboration / Mentorship
+                                    </option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-solid fa-comment"></i>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Hi Naveen, I would like to discuss..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Architecture Detail Modal -->
+    <div class="modal-overlay" id="project-detail-modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="proj-modal-title"><i class="fa-solid fa-circle-info"></i> Project Architecture</h2>
+                <button class="modal-close" id="proj-modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="proj-modal-body">
+                <!-- Dynamic content filled by JS -->
+            </div>
+            <div class="modal-footer">
+                <a id="proj-modal-live-btn" href="#" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-globe"></i> Visit Live Platform
+                </a>
+                <button class="btn btn-secondary btn-sm proj-modal-close-btn">Close</button>
+            </div>
+        </div>
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
+    <!-- Professional Resume Preview Modal -->
+    <div class="modal-overlay" id="resume-modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-file-pdf"></i> Resume Preview - Naveen V</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
 
-    <!-- Pricing Tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16"><h2>$10</h2><span class="w3-opacity">per month</span></li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+            <div class="modal-body" id="printable-resume">
+                <div class="resume-sheet">
+                    <div class="resume-header">
+                        <h1>NAVEEN V</h1>
+                        <p class="resume-contact-info">
+                            Visukr57@gmail.com | +91 9655271699 | github.com/naveen21-11 | linkedin.com/in/naveen21
+                        </p>
+                    </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16"><h2>$25</h2><span class="w3-opacity">per month</span></li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+                    <div class="resume-section">
+                        <h3>CAREER OBJECTIVE</h3>
+                        <p>
+                            Aspiring B.Sc. Information Technology student and Full-Stack Developer with hands-on
+                            experience building and deploying live Django web applications. Proficient in Python,
+                            JavaScript, and MySQL, with a strong foundation in responsive frontend design. Seeking a
+                            software development role to contribute to scalable web applications and grow within an
+                            innovative tech team.
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>EDUCATION</h3>
+                        <div class="resume-item">
+                            <div class="resume-item-head">
+                                <strong>B.Sc. Information Technology</strong>
+                                <span>2027 (Present)</span>
+                            </div>
+                            <p>KG College of Arts and Science, Coimbatore</p>
+                        </div>
+                        <div class="resume-item">
+                            <div class="resume-item-head">
+                                <strong>Higher Secondary Certificate (HSC)</strong>
+                                <span>2023 - 2024</span>
+                            </div>
+                            <p>Christus Rex Higher Secondary School, The Nilgiris</p>
+                        </div>
+                        <div class="resume-item">
+                            <div class="resume-item-head">
+                                <strong>Secondary Certificate (SSLC)</strong>
+                                <span>2021 - 2022</span>
+                            </div>
+                            <p>Christus Rex Higher Secondary School, The Nilgiris</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>INTERNSHIP</h3>
+                        <div class="resume-item">
+                            <div class="resume-item-head">
+                                <strong>APPIN TECHNOLOGIES | Python Full Stack Development Intern</strong>
+                                <span>Duration: 1 Month</span>
+                            </div>
+                            <p>Location: Coimbatore</p>
+                            <ul>
+                                <li>Developed dynamic web applications using Python, Django, HTML, CSS, JavaScript, and
+                                    MySQL.</li>
+                                <li>Built responsive web pages and enhanced application functionality through testing
+                                    and debugging.</li>
+                                <li>Collaborated with mentors to deliver project modules and improve code quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>PROJECTS</h3>
+                        <div class="resume-item">
+                            <div class="resume-item-head">
+                                <strong>1) Flyers Charitable Trust – Official Website (Live Project)</strong>
+                            </div>
+                            <p><strong>Role:</strong> Full Stack Python Developer</p>
+                            <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript, Bootstrap, MySQL</p>
+                            <ul>
+                                <li>Developed and deployed the official website for Flyers Charitable Trust.</li>
+                                <li>Designed a responsive and user-friendly interface across desktop and mobile devices.
+                                </li>
+                                <li>Created pages for Home, About Us, Programs, Gallery, Contact, and Donation Info.
+                                </li>
+                                <li>Optimized performance, accessibility, cross-browser compatibility, and maintained
+                                    live server.</li>
+                            </ul>
+                            <p><strong>Live Website:</strong> https://flyerscharitabletrust.org/</p>
+                            <p><strong>GitHub:</strong> https://github.com/nandhakumar-murugan/flyers</p>
+                        </div>
+
+                        <div class="resume-item" style="margin-top: 10px;">
+                            <div class="resume-item-head">
+                                <strong>2) Jeeva Karangal Charitable Trust – Official Website (Live Project)</strong>
+                            </div>
+                            <p><strong>Role:</strong> Full Stack Python Developer</p>
+                            <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript, Bootstrap, MySQL</p>
+                            <ul>
+                                <li>Designed and developed the official website for Jeeva Karangal Charitable Trust.
+                                </li>
+                                <li>Built a modern, responsive website to showcase services, events, and social
+                                    initiatives.</li>
+                                <li>Implemented contact forms, gallery, event information, and organization details.
+                                </li>
+                                <li>Deployed on live hosting platform and ensured fast loading speed and reliable
+                                    performance.</li>
+                            </ul>
+                            <p><strong>Live Website:</strong> https://jeevakarangal.org/</p>
+                            <p><strong>GitHub:</strong> https://github.com/naveen21-11/jeevakarangal</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>TECHNICAL SKILLS</h3>
+                        <p><strong>Programming Languages:</strong> Python, Java</p>
+                        <p><strong>Database:</strong> MySQL</p>
+                        <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Tools:</strong> IDLE, Eclipse, MySQL, VS Code</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>SOFT SKILLS</h3>
+                        <p>Logical Thinking | Time Management | Teamwork | Adaptability | Communication</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="print-resume-btn">
+                    <i class="fa-solid fa-print"></i> Print / Download PDF
+                </button>
+                <button class="btn btn-secondary modal-close-btn">Close</button>
+            </div>
+        </div>
     </div>
 
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
 
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#home" class="footer-logo">&lt;Naveen.V/&gt;</a>
+                <p>Full-Stack Python Engineer | Architecting Scalable & High-Performance Web Applications.</p>
+            </div>
 
-  <!-- Photo Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    </div>
-  </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#certifications">Credentials</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16"
+            <div class="footer-right">
+                <p>&copy; <span id="current-year"></span> Naveen V. All rights reserved.</p>
+                <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+</body>
+
+</html>
